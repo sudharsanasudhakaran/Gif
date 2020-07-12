@@ -1,0 +1,185 @@
++/* LEFT PANE */
++
++body {
++    background-color: black !important;
++}
++
++.left-pane,
++.middle-pane,
++.right-pane {
++    height: 100vh;
++    background-color: rgba(0, 0, 0, 1);
++    border-right: 0.2px solid gray;
++    padding-top: 40px;
++}
++
++.left-pane {
++    padding: 30px;
++}
++
++.left-pane h4,
++i {
++    display: inline;
++    margin: 5px;
++    color: white;
++    text-align: justify;
++    cursor: pointer;
++}
++
++.left-pane i {
++    font-size: 20px;
++}
++
++.input-group-text {
++    position: relative;
++    top: 1px;
++    width: 30px;
++    height: 35.5px;
++    padding: 0px !important;
++    padding-left: 5px !important;
++    background-color: black !important;
++    border: none !important;
++}
++
++input[type="text"] {
++    border-radius: 3px;
++    border: none;
++    border-bottom: 1px solid white;
++    padding: 5px;
++    width: auto;
++    background: black;
++    color: blanchedalmond;
++}
++
++input[type="text"]:focus {
++    background-color: black;
++    border: 1px solid black;
++}
++
++.left-pane .table td {
++    border: none !important;
++}
++
++.left-pane .table td h4 {
++    border: none !important;
++    border-bottom: 0.2px solid gray !important;
++    width: 60%;
++    display: inline-block;
++}
++
++
++/* Middle Pane */
++
++.middle-pane td {
++    color: white;
++    font-weight: 400;
++    font-size: 13px;
++    cursor: pointer;
++}
++
++.middle-pane p:hover {
++    color: slateblue;
++}
++
++.middle-pane p:focus {
++    color: slateblue;
++}
++
++.middle-pane thead {
++    color: skyblue;
++    font-weight: 900;
++    font-size: 15px;
++    font-family: monospace;
++}
++
++.middle-pane table thead th {
++    border-bottom: none !important;
++    text-align: center !important;
++}
++
++.middle-pane tr,
++td {
++    text-align: left;
++}
++
++.middle-pane table td {
++    text-align: center !important;
++}
++
++.middle-pane table td p {
++    margin: 0 !important;
++}
++
++.middle-pane {
++    height: 500px !important;
++    overflow: auto;
++}
++
++
++/* End Middle Pane */
++
++#myModal input[type="text"] {
++    background-color: white;
++    color: black;
++    display: block;
++    margin-bottom: 10px;
++}
++
++.playListNames {
++    margin: 20px;
++    color: white;
++    cursor: pointer;
++}
++
++.playListNames h5:hover {
++    color: slateblue;
++}
++
++#addNewPlayList {
++    margin-left: 80px;
++    margin-top: -40px;
++}
++
++#myModal select {
++    width: 192.5px;
++    height: 33px;
++}
++
++#myModal h5 {
++    text-align: left;
++}
++
++
++/* Start Right Pane */
++
++.right-pane i,
++h4 {
++    display: inline;
++}
++
++.right-pane h4 {
++    color: white;
++}
++
++.right-pane i {
++    color: white;
++}
++
++.right-pane button {
++    margin-left: 10px;
++}
++
++.audio {
++    position: fixed;
++    bottom: 0;
++    left: 0;
++    width: 100%;
++}
++
++.audio-player-info {
++    display: flex;
++    align-items: center;
++    justify-content: center;
++    width: 100px;
++    height: 30px;
++}

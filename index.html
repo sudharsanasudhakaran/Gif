@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIF ASSESSMENT</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+  <div class="row no-gutters">
+    <div class="col-lg-3">
+      <div class="left-pane">
+        <table class="table table-striped ">
+          <tbody>
+            <tr>
+              <td>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true" id="searchBtn" (click)='getSearchData()'></i></span>
+                  </div>
+                  <input type="text" id="searchTheme" placeholder="Search" />
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4 id="populateSongs">Enter a theme</h4>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+
+                <input type="text" id="searchPlayList" placeholder="ex: avatar" />
+              </td>
+              <td>
+                <button onclick="getSearch()" >Search!</button>
+              <td>
+            </tr>
+            <tr>
+              <td>
+                <h6>Themes Available:</h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Sad</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Avatar</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Happy</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Starwars</p>
+              </td>
+            </tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <h2>The Gif Panel</h2>
+      <br>
+      <div class="middle-pane">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://media1.giphy.com/media/OoaTf8fEuesP6/giphy.gif" style="width:100%" id="demo">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://66.media.tumblr.com/8451fa2969e06fa93e53942efb17477c/tumblr_owqpziPRV01spo3yuo1_640.gif" style="width:100%" id="demo1">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://data.whicdn.com/images/255392685/original.gif" style="width:100%" id=demo2>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://thumbs.gfycat.com/UnimportantWeeBobolink-size_restricted.gif" style="width:100%" id = "demo3">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://media0.giphy.com/media/jpiiSfXUHSdovQwX3T/giphy.gif" style="width:100%" id="demo4">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://i.pinimg.com/originals/c1/b0/1a/c1b01a6f52d9ff47f7d4aa8aaeec8228.gif" style="width:100%" id="demo5">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://filmdaily.co/wp-content/uploads/2020/06/meme-01.gif" style="width:100%">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://media1.giphy.com/media/3o6gDUY3B8ocAgMNhu/giphy.gif" style="width:100%">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://68.media.tumblr.com/dbb34d3fb610e3c39cd79a08a41cfa42/tumblr_ohe1x9QEsW1vm9se0o1_400.gif" style="width:100%">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSeN-fS3ZytnZx2lp7XWAvi-F8gBOh42KY6aA&usqp=CAU" style="width:100%">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://pa1.narvii.com/6510/0fd2faa311975d99610565837242b8b3e2203614_hq.gif" style="width:100%">
+          </div>
+          <div class="col-lg-4">
+            <img src="https://media2.giphy.com/media/LLxwPAjfpLak8/giphy.gif?cid=e1bb72ff5ca421ee653030342efa9b82" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="right-pane">
+        <table class="table">
+          <tr>
+            <td>
+
+              <h4 id="showPlayList">Click here to create a collection</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <button type="button" id="addNewPlayList" onclick="" data-toggle="modal" data-target="#myModal" class="btn btn-outline-info btn-sm"><i class="fa fa-plus"></i> Add a collection</button>
+        <div class="playListNames" id="playlists">
+
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Create a new collection</h5>
+              </div>
+              <div class="modal-body">
+                <input type="text" id="playlistName" style="background-color: white;border: 1px solid;" value="" placeholder="Enter collection name">
+                <select name="genre" id="genre">
+                  <option value="Meme">Meme</option>
+                  <option value="Sad">Sad</option>
+                  <option value="Avatar">Avatar</option>
+                  <option value="Pets">Pets</option>
+                  <option value="Happy">Happy</option>
+                </select>
+                <div id="songs">
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button id="createPlaylist" class="btn btn-primary btn-sm" data-dismiss="modal">Create a collection</button>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="backend.js"></script>
+</body>
+
+</html>
